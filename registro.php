@@ -33,5 +33,30 @@ if($filas['id_cargo']==3){//profesor
 mysqli_free_result($resultado);
 mysqli_close($conexion);
 
+//validacion de inicio de sesion
+session_start();
+include 'conexion/conexion.php';
+
+
+
+$validar_login=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id ='$id' AND contra ='$contra' ");
+
+if(mysqli_num_rows($validar_login) > 0){
+    $_SESSION['usuario']=$id;
+   header('location: administrador.php');
+   exit();
+}else{
+    echo'
+    <script type="text/javascript">
+    
+    alert("usuario no existe, coloque bien los datos");
+    window.location.href="login.php";
+    
+    </script>
+    
+    ';
+
+
+}
 
 ?>
