@@ -1,8 +1,8 @@
 <?php
-include_once 'conexion/conexion.php';
+include 'conexion/conexion.php';
 
-//session_start();
-//$_SESSION['usuario']=$usuario;
+session_start();
+$_SESSION['usuario']=$usuario;
 //agregar datos a la base de datos
 $id=$_POST['id'];
 $contra=$_POST['contra'];
@@ -17,9 +17,6 @@ $filas=mysqli_fetch_array($resultado);
 if($filas['id_cargo']==1){//administrador
     header("location:administrador.php");
 }else
-if($filas['id_cargo']==2){//estudiante
-    header("location:estudiante.php");
-}else
 if($filas['id_cargo']==3){//profesor
     header("location:profesor.php");
 }else{
@@ -33,30 +30,3 @@ if($filas['id_cargo']==3){//profesor
 mysqli_free_result($resultado);
 mysqli_close($conexion);
 
-//validacion de inicio de sesion
-session_start();
-include 'conexion/conexion.php';
-
-
-
-$validar_login=mysqli_query($conexion, "SELECT * FROM usuarios WHERE id ='$id' AND contra ='$contra' ");
-
-if(mysqli_num_rows($validar_login) > 0){
-    $_SESSION['usuario']=$id;
-   header('location: administrador.php');
-   exit();
-}else{
-    echo'
-    <script type="text/javascript">
-    
-    alert("usuario no existe, coloque bien los datos");
-    window.location.href="login.php";
-    
-    </script>
-    
-    ';
-
-
-}
-
-?>

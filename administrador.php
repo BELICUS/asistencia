@@ -1,23 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['usuario'])) {
-  echo '
-      <script type="text/javascript">
-      alert("porfavor iniciar sesion");
-      window.location.href = "login.php";
-      </script>
-    ';
-  //header("location: noje.php");
-  session_destroy();
-  die();
-
-}
-
-
-?>
-
-
-
 <!doctype html>
 <html lang="en">
 
