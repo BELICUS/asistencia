@@ -32,9 +32,9 @@
         <!--<div class="recordar">¿Olvido su contraseña?</div>-->
         <input type="submit" value="Iniciar">
         <!--campo para registrarse-->
-        <div class="registrarse">
+        <!--<div class="registrarse">
             quiero hacer el <a href="registrarse.php">Registro</a>
-        </div>
+        </div>-->
     </form>
     </div>
     
