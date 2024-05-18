@@ -5,13 +5,13 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="estudiantes.css">
+        <link rel="stylesheet" href="css/qr.css">
     </head>
     <body>
         <div class="body">
 
     <center>
-        <h1>Bienvenidos a Lenguaje</h1>
+        <h1>Bienvenidos a Fisica</h1>
         
         <div>Ingresa tu Nombre Completo</div>
        

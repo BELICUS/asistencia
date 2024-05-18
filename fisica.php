@@ -5,7 +5,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="estudiantes.css">
+        <link rel="stylesheet" href="css/qr.css">
     </head>
     <body>
         <div class="body">

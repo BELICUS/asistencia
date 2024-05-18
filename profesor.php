@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <header data-bs-theme="dark">
 
 
@@ -28,29 +29,29 @@
       </div>
     </div>
   </header>
-    
+   <form> 
   <center>
      <h1>Bienvenidos Estudiantes</h1> 
       <div class="body">
-    
-
-        <img src="imagenes proyecto/a fisica.jpg" alt="Fisica"   width= 250\textwidth; > 
-         <h1>Fisica</h1>
-         <a href="/fisica.php"><button type="button" class="btn">Fisica</button></a>
-         
-          
-        <br><br>
-       <img src="imagenes proyecto/a lenguaje.jpg" alt="Lenguaje" width= 250\textwidth;>
+        <h1>Fisica</h1>
+         <img src="imagenes proyecto/a fisica.jpg"    width= 250\textwidth; > 
+         <h2></h2> 
+         <h2></h2> 
+         <a href="fisica.php"><button type="button" class="btn">Fisica</button></a>
+         <br><br>
          <h1>Lenguaje</h1>
+         <h2></h2> 
+         <img src="imagenes proyecto/a lenguaje.jpg"  width= 250\textwidth;>
+         <h2></h2>
          <a href="lenguaje.php"><button  type="button" class="btn">Lenguaje</button></a>
-        
-        <br><br>    
-      
-       <img src="imagenes proyecto/a sociales.jpg" alt="Sociales" width= 250\textwidth>
+         <br><br>
          <h1>Sociales</h1>
-        <a href="/sociales.php"><button  type="submit" class="btn">Sociales</button></a>
-        
-        </div> 
+         <img src="imagenes proyecto/a sociales.jpg" width= 250\textwidth>
+         <h2></h2>
+         <h2></h2> 
+         <a href="sociales.php"><button  type="button" class="btn">Sociales</button></a>
+         </div> 
+      </div>
     </center>
      
 
@@ -61,6 +62,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+</from>
 </body>
 
 </html>
