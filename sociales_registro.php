@@ -6,24 +6,24 @@
     $id=$_POST['id'];
     $email=$_POST['email'];
     
-    $query="INSERT INTO lenguaje(estudiante,id,email)
+    $query="INSERT INTO sociales(estudiante,id,email)
             VALUES ('$name','$id','$email')";
             
     
-    $consulta="SELECT *FROM  lenguaje WHERE estudiante='$name' AND id='$id' AND email='$email'";
+    $consulta="SELECT *FROM  sociales WHERE estudiante='$name' AND id='$id' AND email='$email'";
 
     //verificar que no se repitan los datos en cada tabla
-$verificar_name=mysqli_query($conexion, "SELECT *FROM lenguaje WHERE estudiante ='$name'");
+$verificar_name=mysqli_query($conexion, "SELECT *FROM sociales WHERE estudiante ='$name'");
 
-$verificar_id= mysqli_query($conexion, "SELECT *FROM  lenguaje WHERE id = '$id' ");
+$verificar_id= mysqli_query($conexion, "SELECT *FROM  sociales WHERE id = '$id' ");
 
-$verificar_email = mysqli_query($conexion, "SELECT *FROM lenguaje WHERE email = '$email' ");
+$verificar_email = mysqli_query($conexion, "SELECT *FROM sociales WHERE email = '$email' ");
 
 if(mysqli_num_rows($verificar_name) > 0){
   echo '
     <script type="text/javascript">
     alert("este nombre ya se registro intenta otro");
-    window.location.href="lenguaje.php";
+    window.location.href="sociales.php";
     </script>
     
   ';
@@ -33,7 +33,7 @@ if(mysqli_num_rows($verificar_name) > 0){
   echo '
     <script type="text/javascript">
     alert("este id ya existe");
-    window.location.href="lenguaje.php";
+    window.location.href="sociales.php";
     </script>
     
   ';
@@ -43,7 +43,7 @@ if(mysqli_num_rows($verificar_name) > 0){
     echo '
       <script type="text/javascript">
       alert("este email ya existe");
-      window.location.href="lenguaje.php";
+      window.location.href="sociales.php";
       </script>
       
     ';
@@ -66,7 +66,7 @@ if($ejecutar){
     <script type="text/javascript">
     
     alert("No, intenta de nuevo");
-    window.location.href="lenguaje.php";
+    window.location.href="sociales.php";
     
     </script>
   

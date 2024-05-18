@@ -11,8 +11,8 @@
         <div class="body">
 
     <center>
-        <h1>Bienvenidos a Fisica</h1>
-        <form action="lenguaje_registro.php">
+        <h1>Bienvenidos a lenguaje</h1>
+        <form action="lenguaje_registro.php" method="post">
         <div>Ingresa tu Nombre Completo</div>
        
             <label for="name" class="input-container"></label>
