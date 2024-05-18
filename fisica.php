@@ -14,13 +14,15 @@
         <h1>Bienvenidos a Fisica</h1>
         
         <div>Ingresa tu Nombre Completo</div>
+        <form  method="post" action="fisica_registro.php">
        
             <label for="name" class="input-container"></label>
-            <input type="text" name="name" placeholder="Nombre">
+            <input type="text" name="nombre" placeholder="Nombre">
+            
         <br></br>            
         <div>Ingresa tu Id de Estudiante</div>
         <label for="name" class="input-container"></label>
-        <input type="text"  placeholder="Id de Estudiante">    
+        <input type="text" name="id" placeholder="Id de Estudiante">    
          <br></br>   
          
         <div>Ingresa tu Correo de Estudiante</div>
@@ -28,8 +30,9 @@
         <input type="email" name="email" placeholder="Correo Estudiantil">
         <br></br>
         <div>
-            <a href="/estudinates.html"><button type="submit" name="send" value="sends" class="btn">Enviar</button></a>
+        <button type="submit" name="send" value="sends" class="btn">Enviar</button>
         </div>
+        </form>
     </center>
     </body>
 </html>

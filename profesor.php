@@ -35,20 +35,24 @@
       <div class="body">
         <h1>Fisica</h1>
          <img src="imagenes proyecto/a fisica.jpg"    width= 250\textwidth; > 
-         <h2></h2> 
-         <h2></h2> 
+         <br>
+         <br>
          <a href="fisica.php"><button type="button" class="btn">Fisica</button></a>
-         <br><br>
+         <br>
+         <br>
          <h1>Lenguaje</h1>
-         <h2></h2> 
+         <br>
+         <br> 
          <img src="imagenes proyecto/a lenguaje.jpg"  width= 250\textwidth;>
-         <h2></h2>
+         <br>
+         <br>
          <a href="lenguaje.php"><button  type="button" class="btn">Lenguaje</button></a>
-         <br><br>
+         <br>
+         <br>
          <h1>Sociales</h1>
          <img src="imagenes proyecto/a sociales.jpg" width= 250\textwidth>
-         <h2></h2>
-         <h2></h2> 
+         <br>
+         <br> 
          <a href="sociales.php"><button  type="button" class="btn">Sociales</button></a>
          </div> 
       </div>
