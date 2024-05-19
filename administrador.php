@@ -15,7 +15,8 @@
     <div class="navbar navbar-dark bg-dark shadow-sm">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
-          <strong>administrador</strong>
+
+          <strong>Administrador</strong>
         </a>
         <a href="cerrar_sesion.php">
           <span>cerrar sesion</span>
