@@ -7,6 +7,7 @@
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8a31b174ad.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,7 +28,35 @@
       </div>
     </div>
   </header>
-  
+   <form>
+    <div class="col-8 p-4">
+    <table class="table">
+  <thead class="bg-info">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre del Estudiante</th>
+      <th scope="col">Id Estudiante</th>
+      <th scope="col">Correo Estudiante</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>
+        <a href="" class="btn btn-small btn-warning"><i class="fa-regular fa-pen-to-square"></i></a>
+        <a href="" class="btn btn-small btn-danger"><i class="fa-regular fa-trash-can"></i></a>
+      </td>
+    </tr>
+ 
+  </tbody>
+</table>
+
+    </div>
+   </form>
     
 
   
