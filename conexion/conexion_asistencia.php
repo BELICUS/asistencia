@@ -7,11 +7,11 @@ $dbname = "asistencia";
 $puerto = "33065";
 
 // Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname, $puerto);
-
+$conexion = new mysqli($servername, $username, $password, $dbname, $puerto);
+$conexion->set_charset("utf8");
 // Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+if ($conexion->connect_error) {
+    die("Conexión fallida: " . $conexion->connect_error);
 }
 /** 
 // Consulta SQL

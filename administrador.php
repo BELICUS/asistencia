@@ -5,7 +5,7 @@
 /**se llama la conexion y pido los datos de la tabla fisica **/
 include './conexion/conexion_asistencia.php';
 $sql = "SELECT incremento, id, nombre, correo FROM matematica";
-$resul = $conn->query($sql);
+$resul = $conexion->query($sql);
 
 ?>
 
@@ -69,7 +69,7 @@ $resul = $conn->query($sql);
       if ($sql == 1) {
         echo "<div class = 'alert-success'>  Nuevo estudiante añadido exitosamente </div>";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $conexion->error;
     }
     
      // Cerrar la declaración y la conexión
