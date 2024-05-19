@@ -63,7 +63,7 @@ $resul = $conexion->query($sql);
         echo "<div class='alert-danger'>Error: El correo ya está registrado</div>";
     } else {
 
-      $sql = $conn->query("INSERT INTO matematica(id, nombre, correo) VALUES ('$id', '$nombre', '$correo')");
+      $sql = $conexion->query("INSERT INTO matematica(id, nombre, correo) VALUES ('$id', '$nombre', '$correo')");
 
 
       if ($sql == 1) {
@@ -74,7 +74,7 @@ $resul = $conexion->query($sql);
     
      // Cerrar la declaración y la conexión
      $stmt->close();
-     $conn->close();
+     $conexion->close();
 
     }
   }
@@ -92,13 +92,13 @@ $resul = $conexion->query($sql);
     
         $sql = "UPDATE matematica SET id='$id', nombre='$nombre', correo='$correo' WHERE id=$id";
     
-        if ($conn->query($sql) === TRUE) {
+        if ($conexion->query($sql) === TRUE) {
             echo "Estudiante actualizado exitosamente";
         } /**else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }**/
     
-        $conn->close();
+        $conexion->close();
     }
     }
   ?>
