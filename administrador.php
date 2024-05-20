@@ -53,7 +53,7 @@ $resul = $conexion->query($sql);
       $correo = $_POST["correo"];
 
       // Verificar si el correo ya existe en la base de datos
-      $stmt = $conn->prepare("SELECT * FROM matematica WHERE correo = ?");
+      $stmt = $conexion->prepare("SELECT * FROM matematica WHERE correo = ?");
       $stmt->bind_param("s", $correo);
       $stmt->execute();
       $result = $stmt->get_result();
@@ -95,7 +95,7 @@ $resul = $conexion->query($sql);
         if ($conexion->query($sql) === TRUE) {
             echo "Estudiante actualizado exitosamente";
         } /**else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            echo "Error: " . $sql . "<br>" . $conexion->error;
         }**/
     
         $conexion->close();
@@ -113,13 +113,13 @@ $resul = $conexion->query($sql);
         $id = $_POST['id'];
         $sql = "DELETE FROM matematica WHERE id=$id";
     
-        if ($conn->query($sql) === TRUE) {
+        if ($conexion->query($sql) === TRUE) {
             echo "Estudiante eliminado exitosamente";
         } /**else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            echo "Error: " . $sql . "<br>" . $conexion->error;
         }**/
     
-        $conn->close();
+        $conexion->close();
     }
   }
   }
@@ -167,7 +167,7 @@ $resul = $conexion->query($sql);
     }else {
             echo "<tr><td colspan='4'>No hay datos disponibles</td></tr>";
         }
-       // $conn->close();
+       // $conexion->close();
       ?>
     </tr>
   </tbody>
