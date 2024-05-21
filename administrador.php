@@ -17,6 +17,7 @@ $resul = $conexion->query($sql);
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8a31b174ad.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8a31b174ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="css/qr.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@ $resul = $conexion->query($sql);
       </div>
     </div>
 </header>
-  <h1 class="text-center p-3">hello</h1>
+  <h1 class="text-center p-3">Administrador</h1>
   <div class="container-fluid row"></div>
 
   <form method="POST">
